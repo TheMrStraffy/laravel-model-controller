@@ -13,13 +13,15 @@
 </head>
 
 <body>
+    @include('partials.header')
+<main>
 
-@include('partials.header')
+    <div class="container">
+        @yield('content')
 
-<div class="container">
-    @yield('content')
+    </div>
+</main>
 
-</div>
 
 
 @include('partials.footer')
