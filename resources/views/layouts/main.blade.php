@@ -13,9 +13,14 @@
 </head>
 
 <body>
+
 @include('partials.header')
 
-@yield('content')
+<div class="container">
+    @yield('content')
+
+</div>
+
 
 @include('partials.footer')
 

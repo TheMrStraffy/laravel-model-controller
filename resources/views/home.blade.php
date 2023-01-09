@@ -1,5 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-Home
+<div class="row justify-content-between flex-wrap">
+    @foreach ($movies as $movie)
+
+    @include('partials.card')
+
+    @endforeach
+</div>
 @endsection
