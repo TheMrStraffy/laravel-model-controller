@@ -1,7 +1,7 @@
+@extends('layouts.main')
 
-
+@section('content')
 <div class="card mb-4" style="width: 18rem;">
-    <a href="{{route('detailCard' , $movie->id)}}">
 
 
         <img class="card-img-top" src="" alt="Card image cap">
@@ -12,6 +12,5 @@
           <p class="card-text">{{$movie['date']}}</p>
           <p class="card-text">{{$movie['vote']}}</p>
         </div>
-    </a>
 </div>
-
+@endsection

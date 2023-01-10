@@ -6,13 +6,13 @@
 
         <ul class="d-flex justify-content-around col-8 p-0 m-0">
             <li>
-                <a href="{{route('home')}}">Home</a>
+                <a href="{{route('home')}}" class="{{Route::currentRouteName() === 'home' ? 'active' : ''}}">Home</a>
             </li>
             <li>
-                <a href="{{route('about')}}">about</a>
+                <a href="{{route('about')}}" class="{{Route::currentRouteName() === 'about' ? 'active' : ''}}">about</a>
             </li>
             <li>
-                <a href="{{route('contacts')}}">contacts</a>
+                <a href="{{route('contacts')}}" class="{{Route::currentRouteName() === 'contacts' ? 'active' : ''}}">contacts</a>
             </li>
         </ul>
     </nav>

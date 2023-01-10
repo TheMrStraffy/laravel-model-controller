@@ -19,4 +19,15 @@ class PageController extends Controller
     public function contacts(){
         return view('contacts');
     }
+
+    public function detailCard($id){
+        $movie = Movie::find($id);
+        if(is_null($movie)){
+            abort('404');
+        }
+        // dd($movie);
+        return view('detailCard', compact('movie'));
+    }
+
+
 }
